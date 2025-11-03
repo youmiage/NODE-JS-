@@ -1,0 +1,24 @@
+1. Quelle différence avec ton serveur Node.js natif (Semaine 1) ?
+
+Le serveur Node.js natif utilise le module http et demande de tout gérer manuellement (routes, réponses, en-têtes, etc.),
+tandis qu’Express simplifie énormément ce travail.
+Avec Express, tu n’as plus besoin d’écrire beaucoup de code pour créer des routes ou envoyer des réponses.
+
+
+2. Qu’est-ce qu’Express gère automatiquement pour toi ?
+
+Express gère automatiquement plusieurs choses que tu devais faire à la main avec Node.js natif :
+
+- La création du serveur HTTP.
+
+- Le routage des requêtes (GET, POST, etc.).
+
+- L’envoi des réponses (res.send() au lieu de res.write() + res.end()).
+
+- Les en-têtes HTTP (Content-Type, statut 200, 404…).
+
+- Le traitement du corps (body) des requêtes grâce à express.json() ou express.urlencoded().
+
+- La gestion des erreurs et des pages non trouvées.
+
+- L’utilisation facile de middlewares (authentification, logs, fichiers statiques, etc.).

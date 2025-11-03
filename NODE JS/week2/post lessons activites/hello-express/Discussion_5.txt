@@ -1,0 +1,30 @@
+Discussion 
+ 1. Quelle est la différence entre servir un fichier statique et lire un fichier JSON ?
+
+Fichier statique : envoyé tel quel (HTML, image, CSS, etc.) sans être modifié.
+Express le sert automatiquement via express.static().
+
+Fichier JSON : lu, interprété et renvoyé par le serveur sous forme de données (souvent utilisées par une API).
+
+ 2. Pourquoi readFileSync n’est pas recommandé en production ?
+
+readFileSync() est bloquant : pendant la lecture du fichier, le serveur ne peut pas traiter d’autres requêtes.
+En production, cela ralentit ton application.
+
+Il vaut mieux utiliser fs.readFile() ou fs.promises.readFile(), qui sont asynchrones.
+
+ 3. Comment utiliser fs.promises pour une version asynchrone ?
+
+ 
+==>Version alternative de la route par exemple :
+import { promises as fs } from 'fs';
+
+app.get('/api/products', async (req, res) => {
+  try {
+    const data = await fs.readFile('./data/products.json', 'utf8');
+    const products = JSON.parse(data);
+    res.json(products);
+  } catch (err) {
+    res.status(500).json({ error: 'Erreur serveur' });
+  }
+});

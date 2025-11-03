@@ -1,0 +1,24 @@
+1.Que fait next() ?
+
+-next() sert à passer la main au middleware ou à la route suivante dans la chaîne d’exécution.
+==> Si tu ne mets pas next(), le programme s’arrête ici et aucune route (/ping, /api/products, etc.) ne s’exécutera.
+
+2. Différence entre un middleware global et spécifique à une route
+
+==>Un middleware global agit sur toutes les routes (comme un filtre général).
+
+==>Un middleware spécifique agit seulement sur une ou plusieurs routes précises.
+
+3. Pourquoi les middlewares sont essentiels dans Express ?
+
+Parce qu’ils permettent de :
+
+-Centraliser le code commun à toutes les routes (ex. logs, sécurité, authentification).
+
+-Modifier ou enrichir les requêtes (req) avant qu’elles arrivent aux routes.
+
+-Gérer les erreurs globalement avec un middleware d’erreur (app.use((err, req, res, next) => {...})).
+
+-Structurer ton application en étapes claires et réutilisables.
+
+==> Sans middlewares, tu devrais répéter le même code (log, vérif, temps, etc.) dans chaque route  ce serait lourd et non maintenable.

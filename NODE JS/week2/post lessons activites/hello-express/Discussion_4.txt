@@ -1,0 +1,12 @@
+1.Pourquoi le middleware d’erreur doit-il être placé en dernier ?
+
+En Express, l’ordre d’exécution des middlewares compte énormément.
+Le serveur lit le code de haut en bas.
+
+Le middleware d’erreur doit être le dernier car il agit comme un filet de sécurité :
+il intercepte toutes les erreurs lancées dans les middlewares ou routes précédentes.
+
+2.Quelle est la différence entre throw new Error() et next(err) ?
+
+throw lance une erreur JavaScript normale (risque de crash), 
+tandis que next(err) envoie l’erreur au middleware Express prévu pour la gérer.

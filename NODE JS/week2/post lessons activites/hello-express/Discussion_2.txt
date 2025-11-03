@@ -1,0 +1,8 @@
+1. Qu’apporte le format JSON ?
+
+JSON transforme les données de ton serveur en un format universel et lisible pour le front-end
+ ou tout autre client.
+
+2. Pourquoi chaque ressource a-t-elle sa propre route (/api/products/:id) ?
+
+Chaque route représente une ressource unique, ce qui rend ton API plus claire, plus modulable et plus facile à maintenir.
