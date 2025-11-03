@@ -1,0 +1,20 @@
+                                                                                                                                     ===========
+                                                                                                                                      DISCUSSION 
+                                                                                                                                     ===========
+
+1) Pourquoi séparer la logique d’erreur du code métier ?
+----------------------------------------------------------------
+
+Cela rend le code métier plus clair et lisible.
+
+On ne mélange pas la logique fonctionnelle (CRUD, calcul, etc.) avec la gestion des erreurs.
+
+Rend le code plus facile à modifier , le format des erreurs ou ajouter du logging global.
+
+2)Cohérence des messages côté client :
+---------------------------------------------
+
+Le client sait toujours à quoi s’attendre : mêmes champs (status, message, code, timestamp).
+
+Facilite le débogage, l’affichage d’erreurs et l’automatisation des tests.
+

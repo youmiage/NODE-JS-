@@ -1,0 +1,17 @@
+
+                                                                                                                                    DISCUSSION
+                                                                                                                                    ==========
+
+1)Différence entre middleware global et local :
+-----------------------------------------------------
+
+-Global : appliqué à toutes les routes (app.use(logger)) : fonctionne partout.
+
+-Local : appliqué seulement sur certaines routes (router.get('/', auth, ...)) : plus ciblé, flexible.
+
+2️⃣ Réutilisabilité comme force :
+------------------------------------
+
+-Les middlewares peuvent être écrits une seule fois et appliqués partout où c’est nécessaire.
+
+Exemple : auth.js peut protéger /api/private ou toute autre route nécessitant un token, sans réécrire le code.
