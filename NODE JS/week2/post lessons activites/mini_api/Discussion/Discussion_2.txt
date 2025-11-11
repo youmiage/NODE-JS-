@@ -1,0 +1,26 @@
+                                                                               ===========
+                                                                               DISCUSSION
+                                                                               ===========
+1)Qu’est-ce qu’un endpoint REST bien conçu ?
+---------------------------------------------------
+
+-URLs claires et prévisibles (/api/resources, /api/resources/:id).
+
+-Utilisation correcte des méthodes HTTP (GET, POST, PUT, DELETE).
+
+-Codes HTTP cohérents (200, 201, 204, 404…).
+
+-Séparation claire entre contrôleur, service et routes.
+
+2)Pourquoi l’idempotence est importante ?
+--------------------------------------------------
+
+Une opération idempotente peut être répétée sans modifier l’état après la première exécution.
+
+Exemples :
+
+GET ==> toujours renvoie la même ressource.
+
+PUT ==> remplacer une ressource avec les mêmes données plusieurs fois ne change pas le résultat.
+
+Cela évite les effets secondaires indésirables lors des erreurs réseau ou des appels répétés.

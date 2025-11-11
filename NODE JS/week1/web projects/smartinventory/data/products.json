@@ -1,0 +1,22 @@
+[
+  {"id": "1", "sku":"SKU-001", "name":"Hammer", "category":"tools", "price":25.0, "inStock": true},
+  {"id": "2", "sku":"SKU-002", "name":"Screwdriver", "category":"tools", "price":10.5, "inStock": true},
+  {"id": "3", "sku":"SKU-003", "name":"Wrench", "category":"tools", "price":15.0, "inStock": true},
+  {"id": "4", "sku":"SKU-004", "name":"Drill", "category":"tools", "price":80.0, "inStock": false},
+  {"id": "5", "sku":"SKU-005", "name":"Pliers", "category":"tools", "price":12.0, "inStock": true},
+  {"id": "6", "sku":"SKU-006", "name":"Paint Brush", "category":"painting", "price":5.0, "inStock": true},
+  {"id": "7", "sku":"SKU-007", "name":"Paint Roller", "category":"painting", "price":15.0, "inStock": true},
+  {"id": "8", "sku":"SKU-008", "name":"Ladder", "category":"equipment", "price":60.0, "inStock": false},
+  {"id": "9", "sku":"SKU-009", "name":"Tape Measure", "category":"tools", "price":8.0, "inStock": true},
+  {"id": "10", "sku":"SKU-010", "name":"Safety Gloves", "category":"safety", "price":7.5, "inStock": true},
+  {"id": "11", "sku":"SKU-011", "name":"Helmet", "category":"safety", "price":20.0, "inStock": true},
+  {"id": "12", "sku":"SKU-012", "name":"Sandpaper", "category":"painting", "price":3.0, "inStock": true},
+  {"id": "13", "sku":"SKU-013", "name":"Circular Saw", "category":"tools", "price":120.0, "inStock": false},
+  {"id": "14", "sku":"SKU-014", "name":"Screws Pack", "category":"hardware", "price":4.0, "inStock": true},
+  {"id": "15", "sku":"SKU-015", "name":"Nails Pack", "category":"hardware", "price":3.5, "inStock": true},
+  {"id": "16", "sku":"SKU-016", "name":"Level", "category":"tools", "price":10.0, "inStock": true},
+  {"id": "17", "sku":"SKU-017", "name":"Chisel", "category":"tools", "price":14.0, "inStock": true},
+  {"id": "18", "sku":"SKU-018", "name":"Workbench", "category":"furniture", "price":150.0, "inStock": false},
+  {"id": "19", "sku":"SKU-019", "name":"Safety Glasses", "category":"safety", "price":9.0, "inStock": true},
+  {"id": "20", "sku":"SKU-020", "name":"Utility Knife", "category":"tools", "price":6.0, "inStock": true}
+]

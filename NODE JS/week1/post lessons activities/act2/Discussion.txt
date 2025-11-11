@@ -1,0 +1,8 @@
+==>Quelle différence entre module.exports = fonction et module.exports = { … } ? 
+Ici, require('./greet') renvoie directement la fonction.
+
+Tu n’as pas besoin de faire saluer.saluer(), car il n’y a qu’une seule chose exportée.
+
+==>Dans quels cas préférez-vous l’un ou l’autre ?
+== Si ton module fait une seule tâche → une fonction.
+== S’il contient plusieurs outils → un objet.

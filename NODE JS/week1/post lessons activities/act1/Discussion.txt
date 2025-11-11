@@ -1,0 +1,27 @@
+exercice 1 :
+---------------
+==>Que se passe-t-il si plusieurs fichiers définissent les mêmes noms ? 
+Tu risques d’obtenir des valeurs incorrectes ou des erreurs.
+SyntaxError: Identifier 'PI' has already been declared
+
+==>Pourquoi est-ce un problème dans un projet réel ? 
+Cela crée :
+
+Des bugs difficiles à détecter
+
+Des comportements imprévisibles
+
+Une maintenance compliquée
+
+==>Comment le système de modules de Node résout-il ce problème ?
+Grâce au système de modules !
+
+En Node.js, chaque fichier est un module indépendant.
+Cela veut dire que :
+
+Les variables et fonctions définies dans un fichier sont locales à ce module.
+
+Elles ne polluent pas l’espace global.
+
+Pour partager des éléments entre fichiers, tu dois les exporter explicitement avec module.exports 
+et les importer avec require().

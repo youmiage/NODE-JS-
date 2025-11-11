@@ -1,0 +1,14 @@
+==> Que signifient __filename, __dirname, module, et exports ? 
+
+Chemin complet du fichier courant (y compris le nom du fichier).==> __filename
+Chemin complet du dossier contenant le fichier courant. ==> __dirname
+Objet spécial que Node.js crée pour chaque fichier. Il contient des infos sur le module (comme exports, id, filename, etc.). ==> module
+Raccourci (alias) qui pointe vers module.exports pour faciliter l’export de fonctions, objets, etc. ==> exports
+
+==>Pourquoi exports = fonction() ne fonctionne pas comme prévu ? 
+exports = fonction() ne marche pas, car on change la référence de exports. Il faut faire module.exports = fonction.
+
+
+==>Quelle relation existe entre exports et module.exports ?
+
+ 

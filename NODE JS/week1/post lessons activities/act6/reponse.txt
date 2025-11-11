@@ -1,0 +1,41 @@
+----------------------
+Discussion
+---------------------
+
+Q1) Que signifie “non-bloquant” dans le contexte du module fs ?
+
+Le terme non-bloquant signifie que Node ne bloque pas l’exécution du programme pendant qu’une opération (comme la lecture ou l’écriture d’un fichier) est en cours.
+
+
+Q2) Comment les événements permettent-ils de découpler les modules ?
+
+Le système d’événements (EventEmitter) permet de séparer les responsabilités entre plusieurs fichiers/modules.
+Cela signifie que logger.js ne connaît pas ce que fait app.js,
+et app.js ne dépend pas du code interne de logger.js.
+C’est ça le découplage : les modules peuvent évoluer séparément.
+
+
+Q3)Pourquoi un serveur HTTP Node peut-il gérer des milliers de connexions avec un seul thread ?
+
+Parce que Node.js fonctionne avec un event loop (boucle d’événements) et des opérations non bloquantes.
+
+Node.js n’attend jamais qu’une opération lente (lecture de fichier, requête réseau...) se termine.
+
+Pendant qu’une tâche attend une réponse, Node peut traiter d’autres requêtes.
+
+Le thread unique (single thread) gère toutes les requêtes de manière asynchrone.
+
+Pour consequence un seul thread peut gérer des milliers de connexions simultanément,
+sans créer un thread par requête (contrairement à Java ou PHP).
+
+Q4)Quelle serait la prochaine étape (ex: Express, middlewares, JSON parsing) ? 
+
+Après ce projet de base, voici les prochaines étapes logiques :
+
+-Apprendre Express.js : un framework qui simplifie la création de serveurs HTTP , express permet de gérer les routes plus facilement :
+
+-Utiliser les middlewares : des fonctions qui s’exécutent entre la requête et la réponse (par exemple pour vérifier l’authentification ou parser le corps JSON).
+
+-Travailler avec des données JSON  pour envoyer ou recevoir des données .
+
+-Connexion à une base de données (MongoDB, MySQL, etc.) pour stocker les logs, utilisateurs, etc.

@@ -1,0 +1,4 @@
+[13:34:08] Mémoire libre: 0.51 GB / 3.89 GB (13.20%) | Uptime: 756 min
+[13:34:13] Mémoire libre: 0.51 GB / 3.89 GB (13.13%) | Uptime: 756 min
+[13:34:18] Mémoire libre: 0.51 GB / 3.89 GB (13.04%) | Uptime: 756 min
+[13:34:23] Mémoire libre: 0.50 GB / 3.89 GB (12.95%) | Uptime: 756 min
