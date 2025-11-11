@@ -1,0 +1,74 @@
+[
+  {
+    "id": "o1",
+    "city": "Casablanca",
+    "country": "MA",
+    "timestamp": "2025-11-01T08:00:00Z",
+    "tempC": 20.5,
+    "humidity": 60,
+    "wind": {
+      "speed": 5
+    },
+    "condition": "clear"
+  },
+  {
+    "id": "o2",
+    "city": "Casablanca",
+    "country": "MA",
+    "timestamp": "2025-11-02T09:00:00Z",
+    "tempC": 22,
+    "humidity": 58,
+    "wind": {
+      "speed": 6
+    },
+    "condition": "clouds"
+  },
+  {
+    "id": "o3",
+    "city": "Rabat",
+    "country": "MA",
+    "timestamp": "2025-11-02T10:00:00Z",
+    "tempC": 19,
+    "humidity": 65,
+    "wind": {
+      "speed": 4
+    },
+    "condition": "rain"
+  },
+  {
+    "id": "o4",
+    "city": "Marrakech",
+    "country": "MA",
+    "timestamp": "2025-11-03T12:00:00Z",
+    "tempC": 28,
+    "humidity": 20,
+    "wind": {
+      "speed": 3
+    },
+    "condition": "clear"
+  },
+  {
+    "id": "o5",
+    "city": "Casablanca",
+    "country": "MA",
+    "timestamp": "2025-11-04T07:00:00Z",
+    "tempC": 18,
+    "humidity": 70,
+    "wind": {
+      "speed": 7
+    },
+    "condition": "storm"
+  },
+  {
+    "id": "o6",
+    "city": "Agadir",
+    "country": "MA",
+    "timestamp": "2025-11-04T08:00:00Z",
+    "tempC": 23,
+    "humidity": 50,
+    "wind": {
+      "speed": 8
+    },
+    "condition": "clear"
+  }
+]
